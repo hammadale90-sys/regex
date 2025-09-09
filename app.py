@@ -13,7 +13,7 @@ class SmartRegexGenerator:
     def __init__(self, api_key):
         self.api_key = api_key
         self.base_url = "https://openrouter.ai/api/v1/chat/completions"
-        self.model = "deepseek/deepseek-r1:free"
+        self.model = "deepseek/deepseek-r1-distill-llama-70b:free"
         
     def generate_regex(self, user_input):
         """Generate regex using DeepSeek R1"""
